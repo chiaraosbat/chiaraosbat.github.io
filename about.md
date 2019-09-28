@@ -9,6 +9,5 @@ titles:
   
 key: page-about
 ---
-
-![Chiara](https://github.com/chiaraosbat/chiaraosbat.github.io/blob/master/cropped.jpg =40x)
+<img src="(https://github.com/chiaraosbat/chiaraosbat.github.io/blob/master/cropped.jpg" alt="chiara" width="40"/>
 
