@@ -10,5 +10,5 @@ titles:
 key: page-about
 ---
 
-![Chiara](https://github.com/chiaraosbat/chiaraosbat.github.io/cropped.jpg)
+![Chiara](https://github.com/chiaraosbat/chiaraosbat.github.io/blob/master/cropped.jpg)
 
