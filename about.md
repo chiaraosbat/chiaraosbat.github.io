@@ -10,12 +10,9 @@ titles:
 key: page-about
 ---
 
-<div class="grid">
-  <div class="cell cell--2">/docs/assets/images/cropped.jpg</div>
-  <div class="cell cell--auto">I work as Adviser at the Directorate General Economics of the European Central Bank. I have worked at the ECB since 2000, after my PhD studies at the European University Institute. 
+[chiara](/docs/assets/images/cropped.jpg)
+ I work as Adviser at the Directorate General Economics of the European Central Bank. I have worked at the ECB since 2000, after my PhD studies at the European University Institute. 
 After working many years on exchange rates and competitiveness I now focus on inflation. I coordinated the work of expert groups of the European System of Central Banks on low inflation (2017) and exchange rate pass-through (forthcoming). 
-</div>
-</div>
 
 
 For more details see my [CV](/docs/assets/images/CV.pdf)
