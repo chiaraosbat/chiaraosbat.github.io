@@ -10,5 +10,5 @@ titles:
 key: page-about
 ---
 
-![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
+![Chiara](https://github.com/chiaraosbat/chiaraosbat.github.io/cropped.jpg)
 
