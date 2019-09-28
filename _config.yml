@@ -87,7 +87,7 @@ mathjax: true # false (default), true
 mathjax_autoNumber: true # false (default), true
 
 ## Mermaid
-mermaid: # false (default), true
+mermaid: true # false (default), true
 
 ## Chart
 chart: true # false (default), true
@@ -158,7 +158,7 @@ pageview:
 ## => Search
 ##############################
 search:
-  provider: default # "default" (default), false, "google", "custom"
+  provider: google # "default" (default), false, "google", "custom"
 
   ## Google Custom Search Engine
   google:
@@ -168,11 +168,11 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: false # false (default), "google", "custom"
+  provider: google # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
+    tracking_id : UA-148944704-1 # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 
