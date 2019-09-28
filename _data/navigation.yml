@@ -47,3 +47,17 @@ docs-en:
         url:    /docs/en/configuration
       - title:  Navigation
         url:    /docs/en/navigation
+
+Posts:
+  - title:      About me
+    children:
+      - title:  About
+        url:    about
+      - title:  Publications
+        url:    /_posts/2019-09-28-repec.md
+  - title:      Archive
+    children:
+      - title:  Archive
+        url:    archive.html
+      - title:  Posts
+        url:    /_posts
