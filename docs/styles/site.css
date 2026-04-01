@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'Geist Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/geist-sans-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/geist-sans-latin-500-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/geist-sans-latin-700-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/geist-mono-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/geist-mono-latin-500-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/geist-mono-latin-700-normal.woff2') format('woff2');
+}
+
+:root {
+  --bg: #fbfbfa;
+  --surface: #ffffff;
+  --ink: #202020;
+  --muted: #5b5b5b;
+  --line: #d9d9d4;
+  --accent: #2f4f6f;
+  --container: 900px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Geist Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.site-main {
+  padding-bottom: 4rem;
+}
+
+.container {
+  width: min(calc(100% - 2rem), var(--container));
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+}
+
+.site-header__brand {
+  font-family: 'Geist Mono', 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.site-header__nav,
+.site-footer__links,
+.simple-list,
+.list-stack,
+.utility-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-header__link {
+  color: var(--muted);
+  font-family: 'Geist Mono', 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+}
+
+.site-header__link.is-active {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.22rem;
+}
+
+.page-intro {
+  padding-top: 3.5rem;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+h1,
+h2,
+.list-item__title {
+  font-family: 'Geist Mono', 'Courier New', Courier, monospace;
+  color: var(--ink);
+}
+
+h1 {
+  font-size: clamp(2.35rem, 6vw, 3.75rem);
+  line-height: 1.05;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.page-intro__lede,
+.prose,
+.prose p,
+.list-item__meta,
+.site-footer__copy {
+  color: var(--muted);
+}
+
+.prose p {
+  margin: 0 0 1rem;
+}
+
+.intro-aside {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.portrait {
+  width: 100%;
+  border: 1px solid var(--line);
+}
+
+.aside-heading {
+  margin: 0;
+  font-size: 0.95rem;
+  font-family: 'Geist Mono', 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.simple-list {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.simple-list li,
+.list-item {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.content-block {
+  max-width: 700px;
+}
+
+.research-section + .research-section {
+  margin-top: 2.5rem;
+}
+
+.section-heading {
+  margin-bottom: 0.9rem;
+}
+
+.list-stack {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.list-item__title {
+  margin: 0 0 0.2rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.list-item__meta {
+  margin: 0.15rem 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0 2rem;
+}
+
+.site-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.site-footer__copy {
+  max-width: 58ch;
+  margin: 0;
+}
+
+.site-footer__links,
+.utility-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.utility-links {
+  margin-top: 1rem;
+}
+
+@media (max-width: 760px) {
+  .site-header__inner,
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-aside {
+    max-width: 220px;
+  }
+}

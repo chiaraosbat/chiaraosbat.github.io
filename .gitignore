@@ -180,11 +180,11 @@ build-iPhoneSimulator/
 .rvmrc
 
 yarn.lock
-package-lock.json
 
 # jekyll
 Gemfile.lock
-package-lock.json
 _site/
 .sass-cache/
 .jekyll-metadata
+.astro/
+dist/
